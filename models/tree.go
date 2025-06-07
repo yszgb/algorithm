@@ -243,7 +243,7 @@ func IsSubtree(root *TreeNode, subRoot *TreeNode) bool {
 	return IsSubtree(root.Left, subRoot) || IsSubtree(root.Right, subRoot)
 }
 
-// 返回所以根节点到叶子节点路径
+// 返回所有根节点到叶子节点路径
 func BinaryTreePaths(root *TreeNode) []string {
 	// 方法一：递归,回溯
 	// 隐式回溯，每次递归调用中 s 是通过值传递的，每次递归都会生成一个新的 s
